@@ -1,8 +1,8 @@
-from microservice.color_conversion import *
+from microservice_.color_conversion import *
 
 
 def convert_hsv(pixel):
-    """Given an rgb pixel, directly calls partner's microservice to retrieve and return
+    """Given an rgb pixel, directly calls partner's microservice_ to retrieve and return
     hsv values; not done through zmq only because of the large quantity of pixels going through
     this function, causing extended wait times"""
     rgb = list(pixel)
@@ -11,7 +11,7 @@ def convert_hsv(pixel):
 
 
 def convert_rgb(pixel):
-    """Given an hsv pixel, directly calls partner's microservice to retrieve and return
+    """Given an hsv pixel, directly calls partner's microservice_ to retrieve and return
     rgb values; not done through zmq only because of the large quantity of pixels going through
     this function, causing extended wait times"""
     hsv = list(pixel)

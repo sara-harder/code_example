@@ -79,7 +79,7 @@ def close_color(hsv, bgw, rng, hue_factor, bw_factor):
     """Takes an hsv pixel [list], a list of 3 bools (see greyscale()), and a list of
     ranges (see boundaries()); determines if the given pixel should be kept or discarded
     depending on how close it is to the current chosen color  (to which bgw and rng apply);
-    returns 1 if color is to be deleted, 2 if color is to be kept"""
+    returns True if color is to be deleted, False if color is to be kept"""
     h, s, v = hsv
     black, grey, white = bgw
 
